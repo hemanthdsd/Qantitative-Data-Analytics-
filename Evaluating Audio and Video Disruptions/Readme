@@ -1,0 +1,64 @@
+Tetris Gameplay Analysis: Impact of Visual and Auditory Interruptions
+
+Description
+This repository contains the analysis, data, and findings of a study examining the effects of visual and auditory interruptions on Tetris gameplay performance. The research investigates how these interruptions influence task performance, cognitive load, and user focus. The study highlights that auditory interruptions are less disruptive than visual interruptions, leading to better gameplay scores.
+
+Files in the Repository
+1. Rcode_assignment_2.R
+Purpose: Main R script for data analysis and visualization.
+Key Features:
+Data cleaning to ensure scores remain within valid ranges (0-100).
+Descriptive statistics (mean, median, standard deviation, etc.).
+Visualization of performance data (box plots, mean comparison graphs).
+Statistical hypothesis testing using Welch’s t-test.
+2. tetris.csv
+Description: Dataset containing gameplay scores for 64 participants.
+Columns:
+Condition: Type of interruption (Auditory or Visual).
+Score: Tetris gameplay performance scores (0-100).
+3. Assignment-2_QDA_Poster.pdf
+Description: Poster summarizing the study's methodology, results, and key takeaways.
+Highlights:
+Methodology: A between-participants design comparing two interruption conditions.
+Results:
+Auditory interruptions: Mean score = 67.94 ± 11.05.
+Visual interruptions: Mean score = 46.62 ± 11.80.
+Statistically significant difference observed (p < 0.001).
+Discussion: Implications for designing user interfaces and managing interruptions effectively.
+Statistical Methods Used
+Descriptive Statistics: Mean, median, standard deviation, and interquartile range.
+Normality Tests: Shapiro-Wilk test for distribution assessment.
+Variance Equality: Levene’s test for homogeneity of variances.
+Hypothesis Testing: Welch’s t-test to compare auditory and visual interruption conditions.
+Data Visualization: Box plots and mean comparison graphs for clearer insights.
+How to Use
+Install Required Libraries:
+Ensure the following R packages are installed:
+
+ggplot2 for creating graphs and visualizations.
+dplyr for data manipulation.
+stats for statistical analysis.
+Run the Analysis:
+
+Open the Rcode_assignment_2.R file in RStudio.
+Place tetris.csv in your working directory.
+Execute the script to clean data, generate descriptive statistics, and perform hypothesis testing.
+Review Outputs:
+
+View results and plots in the RStudio output or save them for reporting.
+Refer to Assignment-2_QDA_Poster.pdf for an overview of key findings and implications.
+Findings Summary
+Descriptive Statistics:
+Auditory interruptions: Mean = 67.94, SD = 11.05.
+Visual interruptions: Mean = 46.62, SD = 11.80.
+Key Insight:
+Auditory interruptions are less disruptive than visual ones, leading to higher performance scores.
+Future Research Directions
+Investigate the effects of combined auditory and visual interruptions.
+Study interruption impact over extended gameplay sessions.
+Examine varying interruption frequencies and task complexities.
+Explore user expertise as a factor influencing sensitivity to interruptions.
+Repository Owner
+Name: D.S.D. Hemanth
+University: University College Dublin
+Email: saidurgahemanthdavuloori@gmail.com
