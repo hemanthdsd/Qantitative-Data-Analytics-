@@ -1,0 +1,86 @@
+Usability and Workload Analysis in Voice User Interfaces
+
+## Description
+This repository contains the analysis and results of a study exploring the relationship between usability (measured using the System Usability Scale, SUS) and perceived workload (measured using the NASA Task Load Index, RTLX) in voice user interfaces. The study highlights the unexpected positive correlation between usability and workload, and discusses the implications for designing user-friendly voice assistants.
+
+## Files in the Repository
+### 1. **Assignment_DSD.R**
+   - **Purpose**: Main R script used for data analysis.
+   - **Key Features**:
+     - Data cleaning to handle anomalies (e.g., invalid SUS scores).
+     - Calculation of descriptive statistics (mean, median, standard deviation, etc.).
+     - Visualization of data distribution (histograms, scatterplots).
+     - Correlation analysis using Pearson's correlation coefficient.
+
+### 2. **SusRtlx.csv**
+   - **Description**: Dataset containing responses from participants on SUS and RTLX metrics.
+   - **Columns**:
+     - `SUS`: Usability scores on a scale of 0-100.
+     - `RTLX`: Perceived workload scores derived from six subscales (Mental Demand, Physical Demand, Temporal Demand, Performance, Effort, Frustration).
+     - Additional metadata or participant demographics (if included).
+
+### 3. **Assignment_Poster_DSD.pdf**
+   - **Description**: A poster summarizing the research methodology, key findings, and implications.
+   - **Highlights**:
+     - Methodology: Explanation of participant tasks and questionnaires.
+     - Data cleaning: Handling invalid SUS scores.
+     - Key Findings:
+       - Mean SUS Score: 53.63 ± 24.16
+       - Mean RTLX Score: 42.62 ± 9.41
+       - Significant positive correlation (r = 0.6899, p < 0.001).
+     - Unexpected Insight: Higher usability correlating with higher perceived workload.
+     - Future Directions: Investigating confounders, reverse causality, and scaling methods for voice interfaces.
+
+## Statistical Methods Used
+- **Descriptive Statistics**:
+  - Measures like mean, median, standard deviation, and interquartile range.
+- **Data Cleaning**:
+  - Transforming SUS scores to fit a valid range of 0-100.
+- **Correlation Analysis**:
+  - Pearson's correlation test to evaluate the relationship between SUS and RTLX scores.
+- **Data Visualization**:
+  - Histograms for distribution analysis.
+  - Scatterplots to depict the correlation.
+
+## How to Use
+1. **Install Required Libraries**:
+   Make sure the following R packages are installed:
+   - `ggplot2` for data visualization.
+   - `dplyr` for data manipulation.
+   - `stats` for statistical analysis.
+
+2. **Run the Analysis**:
+   - Open the `Assignment_DSD.R` script in RStudio.
+   - Set the working directory to the folder containing `SusRtlx.csv`.
+   - Run the script to:
+     - Clean the dataset.
+     - Generate descriptive statistics and visualizations.
+     - Perform correlation analysis.
+
+3. **Review Results**:
+   - View graphical outputs and key insights in the RStudio console.
+   - Refer to `Assignment_Poster_DSD.pdf` for a concise summary.
+
+## Findings Summary
+- **Descriptive Statistics**:
+  - Mean SUS: 53.63 ± 24.16
+  - Mean RTLX: 42.62 ± 9.41
+- **Correlation**:
+  - A strong positive correlation (r = 0.6899, p < 0.001) between SUS and RTLX scores.
+- **Key Insight**:
+  - Contrary to assumptions, higher usability scores are associated with increased perceived workload, prompting further research into reverse causality and confounders.
+
+## Future Research Directions
+- Investigate confounding variables like task complexity, participant demographics, and environmental factors.
+- Develop new usability scales tailored for voice interfaces, such as the proposed Voice Usability Scale (VUS).
+- Extend the study to diverse datasets to improve generalizability.
+
+## Repository Owner
+- **Name**: D.S.D. Hemanth
+- **University**: University College Dublin
+- **Email**: [Your Email Here]
+
+## References
+- Brooke, J. (1996). SUS-A quick and dirty usability scale. *Usability Evaluation in Industry*.
+- Hart, S. G., & Staveland, L. E. (1988). Development of NASA-TLX. *Advances in Psychology*.
+- Zwakman, D.S., Pal, D., & Arpnikanondt, C. (2021). Usability Evaluation of Voice Assistants.
