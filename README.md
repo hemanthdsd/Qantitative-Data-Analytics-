@@ -1,4 +1,4 @@
-# Qantitative-Data-Analytics-
+# Qantitative-Data-Analytics
 
 
 This repository contains two assignments from my Quantitative Data Analysis (QDA) coursework, showcasing my expertise in RStudio, data analysis, and visualization techniques. Each assignment explores unique analytical challenges and contributes to advancing quantitative research skills.
